@@ -1,9 +1,50 @@
+import Container from "@/components/Container";
+import Logo from "@/components/Logo";
 
+// import { Link } from "@radix-ui/react-navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Menu = () => {
-    return (
-        <div>Menu</div>
-    )
-}
+  return (
+    <div className=" w-full">
+      <Container>
+        <div className="flex items-center gap-7">
+          <Logo
+            srcImg="https://cdn-icons-png.flaticon.com/512/10817/10817310.png"
+            altImg="code"
+          />
+          <NavigationMenu>
+            <NavigationMenuList className="gap-x-5">
+              <NavigationMenuItem>
+                <NavigationMenuLink>Home</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink>Serviços</NavigationMenuLink>
+              </NavigationMenuItem>
 
-export default Menu
+              <NavigationMenuItem>
+                <NavigationMenuLink>Depoimentos</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink>Parceiros</NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink>Blog</NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default Menu;
