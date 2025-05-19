@@ -1,5 +1,4 @@
 import Container from "@/components/Container";
-import Logo from "@/components/Logo";
 
 import {
   NavigationMenu,
@@ -10,13 +9,13 @@ import {
 
 const Menu = () => {
   return (
-    <div className=" w-full">
+    <div className="w-full absolute top-0">
       <Container>
         <div className="flex items-center gap-7">
-          <Logo
+          {/* <Logo
             srcImg="https://cdn-icons-png.flaticon.com/512/10817/10817310.png"
             altImg="code"
-          />
+          /> */}
           <NavigationMenu>
             <NavigationMenuList className="gap-x-5">
               <NavigationMenuItem>
