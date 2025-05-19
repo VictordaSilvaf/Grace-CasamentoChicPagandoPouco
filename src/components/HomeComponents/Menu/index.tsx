@@ -1,14 +1,11 @@
 import Container from "@/components/Container";
 import Logo from "@/components/Logo";
 
-// import { Link } from "@radix-ui/react-navigation-menu";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
 const Menu = () => {
