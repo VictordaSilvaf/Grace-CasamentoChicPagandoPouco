@@ -5,7 +5,7 @@ interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
 }
 
 const Text: FC<TextProps> = ({ text, className = '' }) => {
-  return <p className={`text-left text-[#404040] text-[15px] ${className}`}>{text}</p>;
+  return <p className={`text-left text-[#404040] text-[15px] opacity-80 ${className}`}>{text}</p>;
 };
 
 export default Text;
