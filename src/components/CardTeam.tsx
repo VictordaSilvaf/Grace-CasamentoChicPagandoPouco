@@ -60,7 +60,7 @@ const CardTeam: FC<CardTeamProps> = ({ imgSrc, title, job }) => {
               </a>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Youtube</p>
+              <p>Twitter</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
@@ -98,7 +98,7 @@ const CardTeam: FC<CardTeamProps> = ({ imgSrc, title, job }) => {
               </a>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Whatsapp</p>
+              <p>Github</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
