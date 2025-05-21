@@ -1,11 +1,11 @@
 import type { FC } from "react";
-import Subtitle from "./Subtitle";
+import Subtitle from "../../../Subtitle";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./ui/tooltip";
+} from "../../../ui/tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,

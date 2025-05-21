@@ -1,4 +1,4 @@
-import CardTeam from "@/components/CardTeam";
+import CardTeam from "@/components/HomeComponents/AchievementsSection/components/CardTeam";
 import Container from "@/components/Container";
 import DescriptionSection from "@/components/DescriptionSection";
 import TitleSection from "@/components/TitleSection";

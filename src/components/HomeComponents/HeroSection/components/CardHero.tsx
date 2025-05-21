@@ -1,8 +1,8 @@
 import type { FC, ReactNode } from "react";
-import Subtitle from "./Subtitle";
-import Text from "./Text";
+import Subtitle from "../../../Subtitle";
+import Text from "../../../Text";
 
-interface CardHeroProps  {
+interface CardHeroProps {
   children: ReactNode;
   title: string;
   description: string;

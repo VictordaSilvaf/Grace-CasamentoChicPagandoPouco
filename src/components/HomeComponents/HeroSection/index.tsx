@@ -1,4 +1,4 @@
-import CardHero from "@/components/CardHero";
+import CardHero from "@/components/HomeComponents/HeroSection/components/CardHero";
 import Container from "@/components/Container";
 import DescriptionSection from "@/components/DescriptionSection";
 import Subtitle from "@/components/Subtitle";
