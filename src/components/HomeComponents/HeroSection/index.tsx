@@ -8,8 +8,8 @@ import { ChartNoAxesColumnIncreasing, Paperclip } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="py-16">
-      <TitleSection title="Sobre nós" />
+    <div className="">
+      <TitleSection title="about us" />
       <DescriptionSection>
         WE'RE A CLOSE TEAM OF CREATIVES, DESIGNERS & DEVELOPERS WHO WORK
         TOGETHER TO CREATE BEAUTIFUL, ENGAGING DIGITAL EXPERIENCES.
