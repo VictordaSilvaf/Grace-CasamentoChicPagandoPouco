@@ -9,10 +9,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faFacebook,
-  faLinkedin,
-  faYoutube,
-  faWhatsapp,
   faFacebookF,
   faTwitter,
   faGithub,
