@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import { Button } from "@/components/ui/button";
 
 import {
   NavigationMenu,
@@ -9,34 +10,34 @@ import {
 
 const Menu = () => {
   return (
-    <div className="w-full absolute top-0">
+    <div className="w-full fixed top-0 z-20 bg-white">
       <Container>
-        <div className="flex items-center gap-7">
-          {/* <Logo
-            srcImg="https://cdn-icons-png.flaticon.com/512/10817/10817310.png"
-            altImg="code"
-          /> */}
+        <div className="flex items-center gap-7 w-full justify-between">
           <NavigationMenu>
             <NavigationMenuList className="gap-x-5">
               <NavigationMenuItem>
-                <NavigationMenuLink>Home</NavigationMenuLink>
+                <NavigationMenuLink className="font-medium">Home</NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink>Serviços</NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink>Depoimentos</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink>Parceiros</NavigationMenuLink>
+                <NavigationMenuLink className="font-medium">Serviços</NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink>Blog</NavigationMenuLink>
+                <NavigationMenuLink className="font-medium">Depoimentos</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink className="font-medium">Parceiros</NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink className="font-medium">Blog</NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+
+          <Button>
+            Eu vou casar
+          </Button>
         </div>
       </Container>
     </div>

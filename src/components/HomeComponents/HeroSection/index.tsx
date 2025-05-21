@@ -9,31 +9,32 @@ import { ChartNoAxesColumnIncreasing, Paperclip } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="py-16">
-      <TitleSection title="Sobre nós" />
-      <DescriptionSection>
-        WE'RE A CLOSE TEAM OF CREATIVES, DESIGNERS & DEVELOPERS WHO WORK
-        TOGETHER TO CREATE BEAUTIFUL, ENGAGING DIGITAL EXPERIENCES.
-      </DescriptionSection>
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-16">
+        <TitleSection title="CASAMENTO CHIC PAGANDO POUCO?" />
+        <DescriptionSection>
+          Te ensino a organizar um casamento chic, o casamento dos seus sonhos, gastando até 50% menos. Clique no botão “Eu vou casar”, que está abaixo e vamos juntas fazer o casamento mais incrível que você já viu.
+        </DescriptionSection>
+      </div>
 
       <Container>
         <div className="flex items-center justify-center mt-12">
           <CardHero
-            title="NETWORKING"
-            description="At vero eos et accusamus et iusto odio dignissimos ducimus qui."
+            title="PLANEJAMENTO"
+            description="Ajudamos você a planejar cada detalhe do seu casamento, desde a escolha do local até os mínimos detalhes da decoração."
           >
             <Paperclip className="text-app-primary size-5" />
           </CardHero>
 
           <CardHero
-            title="ANALYTICS"
-            description="At vero eos et accusamus et iusto odio dignissimos ducimus qui."
+            title="ECONOMIA"
+            description="Estratégias inteligentes para reduzir custos sem comprometer a qualidade e elegância do seu grande dia."
           >
             <ChartNoAxesColumnIncreasing className="text-app-primary size-5" />
           </CardHero>
 
           <CardHero
-            title="DEVELOPMENT."
-            description="At vero eos et accusamus et iusto odio dignissimos ducimus qui."
+            title="ASSESSORIA"
+            description="Suporte completo com fornecedores, negociações e organização para realizar o casamento dos seus sonhos."
           >
             <Paperclip className="text-app-primary size-5" />
           </CardHero>
