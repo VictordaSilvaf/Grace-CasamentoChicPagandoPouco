@@ -13,7 +13,7 @@ import Footer from '@/components/HomeComponents/Footer'
 
 const Home = () => {
     return (
-        <div>
+        <div className='w-full overflow-x-hidden relative'>
             <Menu />
             <Banner />
             <HeroSection />

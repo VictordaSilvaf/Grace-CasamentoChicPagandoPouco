@@ -57,8 +57,8 @@ const Banner = () => {
 
     return (
         <div className="w-full h-[100vh] bg-app-bg-secondary relative justify-center items-center flex">
-            <div className="flex flex-col gap-4 justify-center items-center relative z-10">
-                <div className="flex flex-col gap-4 border-t border-b py-4">
+            <div className="flex flex-col gap-4 justify-center items-center relative z-10 w-[70%]">
+                <div className="flex flex-col gap-4 border-t border-b py-4 line-clamp-1 min-h-[80px]">
                     <TypewriterText text={slides[currentSlide]?.title ?? ' '} />
                 </div>
 
