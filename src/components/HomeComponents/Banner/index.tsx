@@ -58,18 +58,18 @@ const Banner = () => {
     return (
         <div className="w-full h-[100vh] bg-app-bg-secondary relative justify-center items-center flex">
             <div className="flex flex-col gap-4 justify-center items-center relative z-10 w-[70%]">
-                <div className="flex flex-col gap-4 border-t border-b py-4 line-clamp-1 min-h-[80px]">
+                <div className="flex flex-col gap-4 border-t border-b py-4 line-clamp-1 min-h-[80px] font-sifonn uppercase">
                     <TypewriterText text={slides[currentSlide]?.title ?? ' '} />
                 </div>
 
                 <div className="flex flex-row gap-3">
                     <button className='flex flex-col h-6 px-4 py-3 overflow-hidden group justify-center items-center pt-8'>
-                        <span className='text-sm transform transition-transform duration-200 group-hover:-translate-y-8 text-app-typography-secondary'>Portfolio</span>
-                        <span className='text-sm transform transition-transform duration-200 translate-y-8 group-hover:-translate-y-5 text-app-typography-secondary'>Portfolio</span>
+                        <span className='text-lg font-medium transform transition-transform duration-200 group-hover:-translate-y-8 text-app-typography-secondary font-satisfy'>Portfolio</span>
+                        <span className='text-lg font-medium transform transition-transform duration-200 translate-y-7 group-hover:-translate-y-7 text-app-typography-secondary font-satisfy'>Portfolio</span>
                     </button>
                     <button className='flex flex-col h-6 px-4 py-3 overflow-hidden group justify-center items-center pt-8'>
-                        <span className='text-sm transform transition-transform duration-200 group-hover:-translate-y-8 text-app-typography-secondary'>Contato</span>
-                        <span className='text-sm transform transition-transform duration-200 translate-y-8 group-hover:-translate-y-5 text-app-typography-secondary'>Contato</span>
+                        <span className='text-lg font-medium transform transition-transform duration-200 group-hover:-translate-y-8 text-app-typography-secondary font-satisfy'>Contato</span>
+                        <span className='text-lg font-medium transform transition-transform duration-200 translate-y-7 group-hover:-translate-y-7 text-app-typography-secondary font-satisfy'>Contato</span>
                     </button>
                 </div>
 

@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   useEffect(() => {
@@ -13,10 +14,9 @@ function App() {
   }, []);
 
   return (
-    <>
-      <div className=""></div>
+    <ParallaxProvider>
       <Home />
-    </>
+    </ParallaxProvider>
   );
 }
 

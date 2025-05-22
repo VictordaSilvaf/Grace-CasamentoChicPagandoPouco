@@ -126,3 +126,29 @@
     @apply bg-background text-foreground relative;
   }
 }
+
+@theme {
+  --font-sifonn: "Sifonn Pro", "sans-serif";
+  --font-satisfy: "Satisfy Regular", "sans-serif";
+}
+
+@font-face {
+  font-family: "Sifonn Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sifonn Pro"), url("assets/fonts/SIFONN_PRO.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satisfy Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satisfy Regular"),
+    url("assets/fonts/Satisfy-Regular.woff") format("woff");
+}
+
+@layer base {
+  html {
+    font-family: "Sifonn Pro", system-ui, sans-serif;
+  }
+}

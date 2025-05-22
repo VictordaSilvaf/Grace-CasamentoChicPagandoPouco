@@ -27,6 +27,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-helmet": "^6.1.0",
+    "react-parallax": "^3.5.2",
     "swiper": "^11.2.6",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.7"

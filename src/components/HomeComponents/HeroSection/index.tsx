@@ -9,7 +9,7 @@ import { ChartNoAxesColumnIncreasing, Paperclip } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="py-16">
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-16">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-2">
         <TitleSection title="CASAMENTO CHIC PAGANDO POUCO?" />
         <DescriptionSection>
           Te ensino a organizar um casamento chic, o casamento dos seus sonhos, gastando até 50% menos. Clique no botão “Eu vou casar”, que está abaixo e vamos juntas fazer o casamento mais incrível que você já viu.

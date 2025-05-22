@@ -16,7 +16,7 @@ const CardHero: FC<CardHeroProps> = ({ children, title, description }) => {
         <Subtitle text={title} />
       </div>
 
-      <Text className="max-w-80 text-[#404040]" text={description} />
+      <Text className="max-w-80 text-[#404040]/80 font-light" text={description} />
     </div>
   );
 };
