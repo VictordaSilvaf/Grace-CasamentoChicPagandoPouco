@@ -74,6 +74,8 @@ const Banner = () => {
                 </div>
 
                 <SocialMedias />
+
+
             </div>
             <div className="embla overflow-hidden w-full h-full absolute top-0 left-0" ref={emblaRef}>
                 <div className="embla__container flex w-full h-full">
