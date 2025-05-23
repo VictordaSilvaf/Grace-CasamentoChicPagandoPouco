@@ -28,7 +28,7 @@ export default function TypewriterText({ text }) {
 
     return (
         <motion.h1
-            className="text-5xl font-bold text-app-primary text-center"
+            className="text-4xl font-bold text-app-primary text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}

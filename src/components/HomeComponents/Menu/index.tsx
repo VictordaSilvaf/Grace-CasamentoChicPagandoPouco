@@ -10,7 +10,7 @@ import {
 
 const Menu = () => {
   return (
-    <div className="w-full fixed top-0 z-20 bg-white/70 backdrop-blur-sm shadow-2xl">
+    <div className="w-full fixed top-0 z-20 bg-white/70 backdrop-blur-sm shadow-2xl h-[70px] flex items-center">
       <Container>
         <div className="flex items-center gap-7 w-full justify-between">
           <NavigationMenu>

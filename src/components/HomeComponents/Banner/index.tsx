@@ -57,8 +57,8 @@ const Banner = () => {
     }, [emblaApi, onSelect])
 
     return (
-        <div className="w-full h-[100vh] bg-app-bg-secondary relative justify-center items-center flex">
-            <div className="flex flex-col gap-4 justify-center items-center relative z-10 w-[70%]">
+        <div className="w-full h-[100vh] bg-app-bg-secondary relative justify-center items-center flex pt-[70px]">
+            <div className="flex flex-col gap-4 justify-center items-center relative z-10 w-[80%]">
                 <div className="flex flex-col gap-4 border-t border-b py-4 line-clamp-1 min-h-[80px] font-sifonn uppercase">
                     <TypewriterText text={slides[currentSlide]?.title ?? ' '} />
                 </div>
@@ -75,9 +75,8 @@ const Banner = () => {
                 </div>
 
                 <SocialMedias />
-
-
             </div>
+
             <div className="embla overflow-hidden w-full h-full absolute top-0 left-0" ref={emblaRef}>
                 <div className="embla__container flex w-full h-full">
                     {slides.map((slide) => (
@@ -87,9 +86,22 @@ const Banner = () => {
                     ))}
                 </div>
             </div>
+
             <div className="absolute top-0 left-0 w-full h-full">
                 <div className="w-full h-full bg-black/50"></div>
             </div>
+
+            <div className="absolute -bottom-8 left-0 max-w-[600px] w-full h-[350px] z-10 overflow-hidden">
+                <video
+                    src="/src/assets/videos/10ec8ec96bcf402ea1660ce0c728d575.webm"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-contain pointer-events-none"
+                />
+            </div>
+
         </div>
     )
 }
