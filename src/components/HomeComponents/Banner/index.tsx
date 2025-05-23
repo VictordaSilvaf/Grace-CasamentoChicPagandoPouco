@@ -91,7 +91,7 @@ const Banner = () => {
                 <div className="w-full h-full bg-black/50"></div>
             </div>
 
-            <div className="absolute -bottom-8 left-0 max-w-[600px] w-full h-[350px] z-10 overflow-hidden">
+            <div className="absolute -bottom-8 left-0 max-w-[600px] w-full h-[350px] z-10 overflow-hidden bg-neutral-200">
                 <video
                     src="/src/assets/videos/10ec8ec96bcf402ea1660ce0c728d575.webm"
                     autoPlay
