@@ -6,6 +6,7 @@ import { useEffect, useState, useCallback } from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import TypewriterText from '@/components/typewriterText'
 
+
 const slides = [
     {
         id: 1,
