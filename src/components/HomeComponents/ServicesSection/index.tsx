@@ -1,9 +1,30 @@
-
+import Container from "@/components/Container";
+import DescriptionSection from "@/components/DescriptionSection";
+import TitleSection from "@/components/TitleSection";
+import CardService from "./components/CardService";
+import { BrushIcon } from "lucide-react";
 
 const ServicesSection = () => {
-    return (
-        <div>ServicesSection</div>
-    )
-}
+  return (
+    <Container>
+      <TitleSection title="services" />
+      <DescriptionSection>
+        JUST CHECK OUT ALL OF THE SERVICE LISTS BELOW TO GET A GENERAL IDEA OF
+        WHAT WE ARE CAPABLE OF DELIVERING.
+      </DescriptionSection>
 
-export default ServicesSection
+      <div className="mt-[60px] grid grid-cols-3 gap-4">
+        {[1, 2, 3, 4, 5, 6].map(() => (
+          <CardService
+            title="CREATIVE DESIGN"
+            description="Cum sociis natoque penatibus et magnis dis massa."
+          >
+            <BrushIcon className="size-10 text-app-primary" />
+          </CardService>
+        ))}
+      </div>
+    </Container>
+  );
+};
+
+export default ServicesSection;

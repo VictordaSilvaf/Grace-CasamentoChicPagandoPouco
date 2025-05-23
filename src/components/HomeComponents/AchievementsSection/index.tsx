@@ -12,7 +12,7 @@ const AchievementsSection = () => {
         SOLUTIONS FOR AWESOME CLIENTS ACROSS ALL THE PLATFORMS.
       </DescriptionSection>
 
-      <div className="mt-[60px] grid grid-cols-8 mx-auto gap-5">
+      <div className="mt-[60px] grid grid-cols-1 sm:grid-cols-8 mx-auto gap-5">
         <CardTeam
           title="JAMES BEAN"
           job="CREATIVE DIRECTOR"

@@ -10,6 +10,7 @@ import BlogGallery from '@/components/HomeComponents/BlogGallery'
 import CTASection from '@/components/HomeComponents/CTASection'
 import InfoSection from '@/components/HomeComponents/InfoSection'
 import Footer from '@/components/HomeComponents/Footer'
+import PlansSection from '@/components/HomeComponents/PlansSection'
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <AchievementsSection />
             <SlidderSection />
             <ServicesSection />
+            <PlansSection />
             <DepoinmentsSection />
             <PartnersSection />
             <BlogGallery />

@@ -8,16 +8,21 @@ import { ChartNoAxesColumnIncreasing, Paperclip } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="py-16">
+    <div className="">
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-2">
         <TitleSection title="CASAMENTO CHIC PAGANDO POUCO?" />
-        <DescriptionSection>
-          Te ensino a organizar um casamento chic, o casamento dos seus sonhos, gastando até 50% menos. Clique no botão “Eu vou casar”, que está abaixo e vamos juntas fazer o casamento mais incrível que você já viu.
-        </DescriptionSection>
+        <Container>
+          <DescriptionSection>
+            Te ensino a organizar um casamento chic, o casamento dos seus
+            sonhos, gastando até 50% menos. Clique no botão “Eu vou casar”, que
+            está abaixo e vamos juntas fazer o casamento mais incrível que você
+            já viu.
+          </DescriptionSection>
+        </Container>
       </div>
 
       <Container>
-        <div className="flex items-center justify-center mt-12">
+        <div className="flex items-center flex-col sm:flex-row justify-center mt-12 gap-10 sm:gap-0">
           <CardHero
             title="PLANEJAMENTO"
             description="Ajudamos você a planejar cada detalhe do seu casamento, desde a escolha do local até os mínimos detalhes da decoração."
@@ -41,7 +46,7 @@ const HeroSection = () => {
         </div>
       </Container>
 
-      <div className="grid grid-cols-10 mt-14">
+      <div className="grid grid-cols-1 sm:grid-cols-10 mt-14">
         <div data-aos="fade-right" className="col-span-4">
           <img
             className="object-cover w-full h-[450px]"

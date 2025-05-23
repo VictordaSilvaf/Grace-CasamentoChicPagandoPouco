@@ -1,8 +1,5 @@
-
 const DepoinmentsSection = () => {
-    return (
-        <div>DepoinmentsSection</div>
-    )
-}
+  return <div>Depoimnets</div>;
+};
 
-export default DepoinmentsSection
+export default DepoinmentsSection;
