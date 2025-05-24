@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import './styles/embla.css'
 
 function App() {
   useEffect(() => {

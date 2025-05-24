@@ -13,9 +13,10 @@ const ServicesSection = () => {
         WHAT WE ARE CAPABLE OF DELIVERING.
       </DescriptionSection>
 
-      <div className="mt-[60px] grid grid-cols-3 gap-4">
-        {[1, 2, 3, 4, 5, 6].map(() => (
+      <div className="mt-[60px] grid grid-cols-3 gap-4 pb-6">
+        {[1, 2, 3, 4, 5, 6].map((index) => (
           <CardService
+            key={index}
             title="CREATIVE DESIGN"
             description="Cum sociis natoque penatibus et magnis dis massa."
           >

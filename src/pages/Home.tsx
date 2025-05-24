@@ -19,12 +19,12 @@ const Home = () => {
             <Banner />
             <DepoinmentsSection />
             <HeroSection />
+            <BlogGallery />
             <AchievementsSection />
             <SlidderSection />
             <ServicesSection />
-            <PlansSection />
             <PartnersSection />
-            <BlogGallery />
+            <PlansSection />
             <CTASection />
             <InfoSection />
             <Footer />
