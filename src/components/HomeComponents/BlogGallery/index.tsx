@@ -52,7 +52,7 @@ const BlogGallery = () => {
         <div className="w-full pt-10">
             <div className="w-5xl mx-auto">
                 <TitleSection title="Blog Gallery" />
-                <p className="text-xs text-app-typography-tertiary/75 text-center mt-4">
+                <p className="text-app-typography-tertiary/75 text-center mt-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus nemo quis nostrum cum harum optio sit unde, animi rerum deleniti consequuntur excepturi placeat voluptatum a maiores eius quo iste.
                 </p>
 
@@ -69,7 +69,7 @@ const BlogGallery = () => {
                             </Button>
 
                             {category.id !== categories.length && (
-                                <span className="text-app-typography-tertiary/50 text-xs font-thin font-serif cursor-default select-none mb-1">:::</span>
+                                <span className="text-app-typography-tertiary/50 font-thin font-serif cursor-default select-none mb-1">:::</span>
                             )}
                         </Fragment>
                     ))}
