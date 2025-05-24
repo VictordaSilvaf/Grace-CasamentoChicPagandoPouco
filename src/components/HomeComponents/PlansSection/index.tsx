@@ -62,7 +62,7 @@ const PlansSection = () => {
           MAKE IT RESPONSIVE FOR SMALL DEVICES.
         </DescriptionSection>
 
-        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 pb-5">
           {tiers.map((tier, tierIdx) => (
             <div
               key={tier.id}
@@ -96,16 +96,14 @@ const PlansSection = () => {
 
                 <p className="mt-6 flex items-baseline gap-x-1 ">
                   <span
-                    className={`text-4xl font-semibold tracking-tight ${
-                      tier.mostPopular ? "text-app-primary" : "text-gray-900"
-                    } `}
+                    className={`text-4xl font-semibold tracking-tight ${tier.mostPopular ? "text-app-primary" : "text-gray-900"
+                      } `}
                   >
                     {tier.priceMonthly}
                   </span>
                   <span
-                    className={`text-sm/6 font-semibold ${
-                      tier.mostPopular ? "text-app-primary/60" : "text-gray-600"
-                    }`}
+                    className={`text-sm/6 font-semibold ${tier.mostPopular ? "text-app-primary/60" : "text-gray-600"
+                      }`}
                   >
                     /month
                   </span>
@@ -128,16 +126,14 @@ const PlansSection = () => {
 
               <button className="flex mt-8 flex-col h-6 px-4 py-3 overflow-hidden group justify-center items-center pt-8">
                 <span
-                  className={`text-lg cursor-pointer font-medium transform transition-transform duration-200 group-hover:-translate-y-8 ${
-                    tier.mostPopular ? "text-app-primary" : "text-gray-900"
-                  } font-satisfy`}
+                  className={`text-lg cursor-pointer font-medium transform transition-transform duration-200 group-hover:-translate-y-8 ${tier.mostPopular ? "text-app-primary" : "text-gray-900"
+                    } font-satisfy`}
                 >
                   Buy plan
                 </span>
                 <span
-                  className={`text-lg cursor-pointer font-medium transform transition-transform duration-200 translate-y-7 group-hover:-translate-y-7 ${
-                    tier.mostPopular ? "text-app-primary" : "text-gray-900"
-                  }  font-satisfy`}
+                  className={`text-lg cursor-pointer font-medium transform transition-transform duration-200 translate-y-7 group-hover:-translate-y-7 ${tier.mostPopular ? "text-app-primary" : "text-gray-900"
+                    }  font-satisfy`}
                 >
                   Buy plan
                 </span>

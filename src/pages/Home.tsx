@@ -17,12 +17,12 @@ const Home = () => {
         <div className='w-full overflow-x-hidden relative'>
             <Menu />
             <Banner />
+            <DepoinmentsSection />
             <HeroSection />
             <AchievementsSection />
             <SlidderSection />
             <ServicesSection />
             <PlansSection />
-            <DepoinmentsSection />
             <PartnersSection />
             <BlogGallery />
             <CTASection />
