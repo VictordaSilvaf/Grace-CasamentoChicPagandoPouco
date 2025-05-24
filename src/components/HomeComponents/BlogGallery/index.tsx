@@ -77,13 +77,14 @@ const BlogGallery = () => {
             </div>
 
             <div className="grid grid-cols-4 mt-10">
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
-                <BlogGalleryItem image="/src/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
+                <BlogGalleryItem image="/assets/imagens/praia-casamento.jpg" title="Praia Casamento" />
             </div>
         </div>
     )
