@@ -54,7 +54,7 @@ const PlansSection = () => {
   }
 
   return (
-    <div className="">
+    <div id="plan">
       <Container>
         <TitleSection title="OUR PLANS" />
         <DescriptionSection>

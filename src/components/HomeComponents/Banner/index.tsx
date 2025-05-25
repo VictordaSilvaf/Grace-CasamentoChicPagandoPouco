@@ -57,7 +57,7 @@ const Banner = () => {
     }, [emblaApi, onSelect])
 
     return (
-        <div className="w-full h-[100vh] bg-app-bg-secondary relative justify-center items-center flex pt-[70px]">
+        <div id='home' className="w-full h-[100vh] bg-app-bg-secondary relative justify-center items-center flex pt-[70px]">
             <div className="flex flex-col gap-4 justify-center items-center relative z-[15] w-[80%]">
                 <div className="flex flex-col gap-4 border-t border-b py-4 line-clamp-1 min-h-[80px] font-sifonn uppercase">
                     <TypewriterText text={slides[currentSlide]?.title ?? ' '} />
