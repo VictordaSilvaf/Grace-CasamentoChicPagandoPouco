@@ -1,8 +1,15 @@
 import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import { BuildingIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { useState } from "react";
 
 const InfoSection = () => {
+  const [name, setName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [messageText, setMessageText] = useState<string>("");
+
   return (
     <div id="contact" className="relative isolate bg-white">
       <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2">
@@ -92,6 +99,8 @@ const InfoSection = () => {
                   </label>
                   <div className="mt-1.5">
                     <input
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       id="first-name"
                       name="first-name"
                       type="text"
@@ -109,6 +118,8 @@ const InfoSection = () => {
                   </label>
                   <div className="mt-1.5">
                     <input
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                       id="last-name"
                       name="last-name"
                       type="text"
@@ -126,6 +137,8 @@ const InfoSection = () => {
                   </label>
                   <div className="mt-1.5">
                     <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       id="email"
                       name="email"
                       type="email"
@@ -143,11 +156,14 @@ const InfoSection = () => {
                   </label>
                   <div className="mt-1.5">
                     <input
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       id="phone-number"
                       name="phone-number"
                       type="tel"
                       autoComplete="tel"
                       className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                      // placeholder="(99) 99999-9999"
                     />
                   </div>
                 </div>
@@ -160,6 +176,8 @@ const InfoSection = () => {
                   </label>
                   <div className="mt-1.5">
                     <textarea
+                      value={messageText}
+                      onChange={(e) => setMessageText(e.target.value)}
                       id="message"
                       name="message"
                       rows={4}
