@@ -9,7 +9,7 @@ const DepoinmentsSection = () => {
       bgImage="/src/assets/imagens/praia-casamento.jpg"
       bgImageAlt="Casamento"
       strength={700}
-  
+
       className="w-full relative"
       bgImageStyle={{
         objectFit: "cover",
@@ -22,8 +22,10 @@ const DepoinmentsSection = () => {
           <DepoimentCard />
           <DepoimentCard />
 
-          <div className="col-span-1 sm:col-span-2 lg:col-span-3">
-            <Button className="w-full">Ver mais</Button>
+          <div className="col-span-3">
+            <Button size="2xl" className="w-full text-lg uppercase">
+              Eu quero um casamento chique pagando pouco!
+            </Button>
           </div>
         </div>
       </Container>

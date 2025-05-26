@@ -7,7 +7,7 @@ import { ChartNoAxesColumnIncreasing, Paperclip } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-2">
+      <div className="max-w-7xl mx-auto flex flex-col items-center py-20 justify-center gap-2">
         <TitleSection title="CASAMENTO CHIC PAGANDO POUCO?" />
         <Container>
           <DescriptionSection>
@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       <Container>
-        <div className="flex items-center flex-col sm:flex-row justify-center mt-12 gap-10 sm:gap-0">
+        <div className="flex items-center flex-col sm:flex-row justify-center mt-12 gap-10 sm:gap-0 mb-20">
           <CardHero
             title="PLANEJAMENTO"
             description="Ajudamos você a planejar cada detalhe do seu casamento, desde a escolha do local até os mínimos detalhes da decoração."
