@@ -11,6 +11,7 @@ import CTASection from '@/components/HomeComponents/CTASection'
 import Footer from '@/components/HomeComponents/Footer'
 import TitleSection from '@/components/TitleSection'
 import DescriptionSection from '@/components/DescriptionSection'
+import PartnersLogo from '@/components/HomeComponents/PartnersLogo'
 
 const Home = () => {
     return (
@@ -35,7 +36,7 @@ const Home = () => {
 
             <BlogGallery />
 
-            <span>Parceiros</span>
+            <PartnersLogo />
 
             {/* Fotos de decoracao */}
             <SlidderSection />

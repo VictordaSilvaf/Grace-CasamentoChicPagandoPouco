@@ -9,7 +9,6 @@ const DepoinmentsSection = () => {
       bgImage="/src/assets/imagens/praia-casamento.jpg"
       bgImageAlt="Casamento"
       strength={700}
-
       className="w-full relative"
       bgImageStyle={{
         objectFit: "cover",
@@ -17,16 +16,19 @@ const DepoinmentsSection = () => {
       }}
     >
       <Container>
-        <div id="depoiments" className="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
+        <div
+          id="depoiments"
+          className="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-10"
+        >
           <DepoimentCard />
           <DepoimentCard />
           <DepoimentCard />
-
-          <div className="col-span-3">
-            <Button size="2xl" className="w-full text-lg uppercase">
-              Eu quero um casamento chique pagando pouco!
-            </Button>
-          </div>
+          <DepoimentCard />
+        </div>
+        <div className="w-full flex justify-center items-center pb-10">
+          <Button size="2xl" className="w-auto text-lg uppercase">
+            Eu quero um casamento chique pagando pouco!
+          </Button>
         </div>
       </Container>
     </Parallax>
@@ -36,7 +38,7 @@ const DepoinmentsSection = () => {
 const DepoimentCard = () => {
   return (
     <a href="/">
-      <div className="col-span-1 bg-white overflow-hidden">
+      <div className="col-span-1 w-full bg-white overflow-hidden">
         <div className="w-full aspect-video relative">
           <img
             src="https://img.freepik.com/fotos-gratis/corredor-de-casamento-azul-e-branco-em-uma-praia-cercada-por-palmeiras-com-o-mar-ao-fundo_181624-32618.jpg?t=st=1748100226~exp=1748103826~hmac=902117c538bf625b327cc15db2e9faf6e446e74042a742245568a05df574b756&w=826"

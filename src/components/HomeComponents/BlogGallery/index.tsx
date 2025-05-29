@@ -48,12 +48,74 @@ const categories = [
   },
 ];
 
+const posts = [
+  {
+    id: 1,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Praia Casamento",
+    categorySlug: "casamentos",
+  },
+
+   
+  {
+    id: 2,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Evento Empresarial",
+    categorySlug: "eventos",
+  },
+  {
+    id: 3,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Festa de 15 anos",
+    categorySlug: "debutantes",
+  },
+  {
+    id: 4,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Foto Artística",
+    categorySlug: "fotografia",
+  },
+
+  {
+    id: 5,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Praia Casamento",
+    categorySlug: "casamentos",
+  },
+
+  {
+    id: 6,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Praia Casamento",
+    categorySlug: "debutantes",
+  },
+
+   {
+    id: 7,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Praia Casamento",
+    categorySlug: "eventos",
+  },
+
+  {
+    id: 8,
+    image: "/assets/imagens/praia-casamento.jpg",
+    title: "Praia Casamento",
+    categorySlug: "eventos",
+  },
+];
+
 const BlogGallery = () => {
-  const [selectedCategory, setSelectedCategory] = useState(categories[1]);
+  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   const handleCategoryClick = (category: (typeof categories)[1]) => {
     setSelectedCategory(category);
   };
+
+  const filteredPosts =
+    selectedCategory.slug === "all"
+      ? posts
+      : posts.filter((post) => post.categorySlug === selectedCategory.slug);
 
   return (
     <div id="blog" className="w-full pt-10">
@@ -109,38 +171,13 @@ const BlogGallery = () => {
       </Container>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-10">
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
-        <BlogGalleryItem
-          image="/assets/imagens/praia-casamento.jpg"
-          title="Praia Casamento"
-        />
+        {filteredPosts.map((post) => (
+          <BlogGalleryItem
+            key={post.id}
+            image={post.image}
+            title={post.title}
+          />
+        ))}
       </div>
     </div>
   );
